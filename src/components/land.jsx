@@ -1,15 +1,36 @@
-import React from 'react'
-import styles from '@/app/styles/main.css'
+'use client';
+
+import React from 'react';
+import {useEffect, useRef } from 'react';
+import styles from '@/app/styles/main.css';
+import Typed from 'typed.js';
 
 // use props in Next.JS
 
+const Land = ({ fixed }) => {
+  const typer = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(typer.current, {
+      strings: ["TheYeezyGuy", "WorldHatesD", "a Developer", "an Editor", "an Aviationist"],
+      startDelay: 300,
+      typeSpeed: 75,
+      backSpeed: 100,
+      backDelay: 100,
+      smartBackspace: true,
+      loop: true,
 
-const Land = ({ title }) => {
+    });
+
+    return () => {
+      typed.destroy();
+    };
+    }, []);
   return (
     <div
-    className="flex flex-col justify-center items-center h-screen w-screen"
+    className=""
     >
-      <p className="text-3xl font-bold titleName " styles={styles.titleName}>{title}</p>
+      <h1 className="text-3xl font-bold titleName " styles={styles.titleName}>{fixed}<span ref={typer} className="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent
+      "></span></h1>
       
     </div>
   )

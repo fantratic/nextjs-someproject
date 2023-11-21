@@ -7,7 +7,7 @@ import styles from '@/app/styles/main.css'
 const Land = ({ title }) => {
   return (
     <div
-    className="flex flex-col justify-center items-center h-screen w-screen bg-gradient-to-r from-blue-200 to-cyan-200"
+    className="flex flex-col justify-center items-center h-screen w-screen"
     >
       <p className="text-3xl font-bold titleName " styles={styles.titleName}>{title}</p>
       

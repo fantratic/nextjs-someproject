@@ -1,6 +1,6 @@
 import React from 'react'
 
-const land = () => {
+const Land = () => {
   return (
     <div
     className="flex flex-col justify-center items-center h-screen w-screen bg-gray-900"
@@ -11,4 +11,4 @@ const land = () => {
   )
 }
 
-export default land
+export default Land

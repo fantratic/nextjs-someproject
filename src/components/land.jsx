@@ -27,10 +27,14 @@ const Land = ({ fixed }) => {
     }, []);
   return (
     <div
-    className=""
+    className=" mx-auto px-4 py-4 h-[25vh] bg-slate-900"
     >
       <h1 className="text-3xl font-bold titleName " styles={styles.titleName}>{fixed}<span ref={typer} className="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent
       "></span></h1>
+      
+      
+      
+
       
     </div>
   )

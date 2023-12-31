@@ -1,5 +1,7 @@
 import Land from '@/src/components/land'
 import Image from 'next/image'
+import React from 'react'
+import Test from '@/src/compotent/test';
 
 export default function Home() {
   return (

@@ -2,7 +2,7 @@ import Land from '@/src/components/land'
 import Image from 'next/image'
 import Navbar from "@/src/components/navbar";
 import React from 'react'
-import Test from '@/src/compotent/test';
+import Test from '@/app/test';
 
 export default function Home() {
   return (

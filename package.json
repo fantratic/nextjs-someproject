@@ -2,11 +2,12 @@
   "name": "nextjs-someproject",
   "version": "0.1.0",
   "private": true,
+  "homepage": "tailwind.yeezyhosting.shop",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node server.js"
+
   },
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.1.4",
